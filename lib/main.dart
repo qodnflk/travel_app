@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:study_app/json_parse.dart';
+import 'package:study_app/screens/main_page.dart';
+
+import 'package:study_app/screens/start_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +17,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const JsonParse(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: StartPage(),
     );
   }
 }
